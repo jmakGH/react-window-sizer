@@ -16,15 +16,17 @@
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "webpack",
+    "build": "babel ./src --out-dir ./dist --source-maps",
     "test": "NODE_ENV=test jest --coverage",
     "test:watch": "NODE_ENV=test jest --coverage --watch"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.1.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
@@ -40,14 +42,14 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "jest": "^22.1.4",
+    "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "webpack": "^3.10.0"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0"
+    "prop-types": "^15.6.0"
   },
   "jest": {
     "coverageDirectory": "<rootDir>/tests/coverage",
