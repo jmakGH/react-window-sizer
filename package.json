@@ -17,7 +17,8 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "webpack",
-    "test": "NODE_ENV=test jest --coverage --watch"
+    "test": "NODE_ENV=test jest --coverage",
+    "test:watch": "NODE_ENV=test jest --coverage --watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
