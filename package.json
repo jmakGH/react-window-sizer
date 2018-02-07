@@ -15,6 +15,7 @@
   ],
   "main": "dist/index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "webpack",
     "test": "NODE_ENV=test jest --coverage --watch"
   },
