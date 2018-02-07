@@ -1,6 +1,6 @@
 {
   "name": "react-window-sizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React HOC that passes the browser dimensions to another component",
   "author": "Justin Mak <j.mak.dev@gmail.com>",
   "license": "MIT",
