@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "webpack",
+    "test": "NODE_ENV=test jest --coverage --watch"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
@@ -7,21 +11,43 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
     "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "jest": "^22.1.4",
+    "react-dom": "^16.2.0",
     "webpack": "^3.10.0"
   },
-  "peerDependencies": {
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0"
   },
-  "dependencies": {
-    "prop-types": "^15.6.0"
+  "jest": {
+    "coverageDirectory": "<rootDir>/tests/coverage",
+    "moduleDirectories": [
+      "node_modules",
+      "<rootDir>/src"
+    ],
+    "roots": [
+      "<rootDir>/tests"
+    ],
+    "setupFiles": [
+      "<rootDir>/tests/configJest.js"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ]
   }
 }
