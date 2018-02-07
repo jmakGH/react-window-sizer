@@ -8,6 +8,7 @@ A higher-order React component that passes the browser's window dimensions.
 
 ## Table of Contents
   * [Installation](#installation)
+  * [Dependencies](#dependencies)
   * [Usage](#usage)
   * [Props](#props)
 
@@ -19,6 +20,11 @@ To install, you can use [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.
 $ npm install react-window-sizer
 $ yarn add react-window-sizer
 ``` 
+
+## Dependencies
+
+You must have [React](https://www.npmjs.com/package/react) and [ReactDOM](https://www.npmjs.com/package/react-dom)
+already installed in your project.
 
 ## Usage
 
