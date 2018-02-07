@@ -1,5 +1,19 @@
 {
+  "name": "react-window-sizer",
+  "version": "1.0.0",
+  "description": "React HOC that passes the browser dimensions to another component",
+  "author": "Justin Mak <j.mak.dev@gmail.com>",
   "license": "MIT",
+  "homepage": "https://gitlab.com/j.mak.dev/react-window-sizer",
+  "bugs": "https://gitlab.com/j.mak.dev/react-click-to-key/issues",
+  "keywords": [
+    "react",
+    "react-component",
+    "hoc",
+    "window",
+    "size"
+  ],
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
     "test": "NODE_ENV=test jest --coverage --watch"
