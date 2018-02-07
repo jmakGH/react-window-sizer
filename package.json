@@ -1,4 +1,8 @@
 {
+  "license": {
+    "type": "MIT",
+    "url": "https://gitlab.com/j.mak.dev/react-window-sizer/blob/master/LICENSE"
+  },
   "scripts": {
     "build": "webpack",
     "test": "NODE_ENV=test jest --coverage --watch"
