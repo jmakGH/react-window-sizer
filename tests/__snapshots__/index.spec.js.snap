@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WindowSizer /> should render 1`] = `
+<WindowSizer
+  onResize={[Function]}
+  optimizeBy=""
+  optimizeEvery={250}
+>
+  <div
+    style={
+      Object {
+        "height": 768,
+        "width": 1024,
+      }
+    }
+  />
+</WindowSizer>
+`;
