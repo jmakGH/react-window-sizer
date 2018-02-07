@@ -3,4 +3,4 @@ node_js:
   - "9"
 cache: yarn
 after_success:
-  - coveralls < coverage/lcov.info
+  - coveralls < tests/coverage/lcov.info
