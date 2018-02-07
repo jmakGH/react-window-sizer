@@ -1,0 +1,17 @@
+{
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "globals": {
+    "React": true,
+    "setupMount": true,
+    "setupShallow": true
+  },
+  "rules": {
+    "strict": 0,
+    "no-console": 0,
+    "import/no-unresolved": 0,
+    "react/prop-types": 0
+  }
+}
