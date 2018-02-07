@@ -4,6 +4,7 @@ A higher-order React component that passes the browser's window dimensions.
 
 [![Build Status](https://api.travis-ci.org/jmakGH/react-window-sizer.svg?branch=master)](https://travis-ci.org/jmakGH/react-window-sizer)
 [![Coverage Status](https://coveralls.io/repos/github/jmakGH/react-window-sizer/badge.svg?branch=master)](https://coveralls.io/github/jmakGH/react-window-sizer?branch=master)
+![gzip size](http://img.badgesize.io/https://unpkg.com/react-window-sizer/dist/index.js?compression=gzip)
 
 ## Table of Contents
   * [Installation](#installation)
